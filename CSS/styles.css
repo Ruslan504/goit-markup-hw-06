@@ -913,8 +913,8 @@ footer .social-block:focus {
   cursor: pointer;
 }
 .form-checkbox {
-  outline: 1px solid tomato;
-  display: inline-block;
+  /* outline: 1px solid tomato; */
+
   display: flex;
 
   align-items: center;
@@ -937,6 +937,8 @@ footer .social-block:focus {
   background-image: url(../img/sprite/original/check-form-modal.svg);
   background-size: contain;
   margin-right: 7px;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
 }
 .form-input-check:checked + .icon-check-form {
   background-color: var(--blue-color);
@@ -944,15 +946,6 @@ footer .social-block:focus {
   border-color: var(--blue-color);
 }
 
-/* .icon-check-form {
-  outline: 1px solid red;
-  fill: #188ce8;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--logo-black-color);
-  border-radius: 4px;
-  background-origin: border-box;
-} */
 .checkbox-link {
   color: var(--blue-color);
   text-decoration: underline;
