@@ -922,7 +922,7 @@ footer .social-block:focus {
   cursor: pointer;
 }
 .form-checkbox {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 
   display: flex;
 
